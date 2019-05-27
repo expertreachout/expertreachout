@@ -53,6 +53,7 @@ Author URI : http://www.markups.io/
 .mu-schedule-menu li.active a:hover,
 .mu-schedule-menu li.active a:focus {
 	background-color: #EE3268;
+	/*background-color: #6991dc;*/
 }
 
 .mu-social-media a:hover,
