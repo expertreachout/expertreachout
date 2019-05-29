@@ -50,11 +50,175 @@
 
 
 
+    <style type="text/css">
+
+		#content-mobile  {
+				display: none;
+		}
+
+		#content-desktop {
+			display: block;
+		}
+
+		.content-mobile {
+			display: none;
+		}
+		.content-desktop {
+			display: block;
+		}
+
+
+    	@media screen and (max-width: 768px) {
+
+					#content-desktop {display: none;}
+					#content-mobile {display: block;}
+					.content-desktop {display: none;}
+					.content-mobile { display: block; }
+
+					}
+		}
+		}
+
+
+
+
+		/* Team Member CSS
+===========================*/
+
+h1.team-h1 {
+  margin: 0;
+  position: absolute;
+  top: -16px;
+  text-align: center;
+  left: 40%;
+  font-family: georgia;
+  font-style: italic;
+  background-color: white;
+  padding: 0px 20px;
+  color: #222;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.team-container {
+  max-width: 1000px;
+  margin: auto;
+  border-top: 1px #e9e9e9 solid;
+  /*border-bottom: 1px #e9e9e9 solid;*/
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-top: 3em;
+  position: relative;
+}
+
+.team-member {
+  width: 16%;
+  float: left;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.team-member:last-child {margin-right: 0;}
+
+
+.team-member span,
+.team-member h3 {
+  max-width: 200px;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+}
+
+.team-member h3 {
+  color: #ee3268;
+}
+
+.email {
+  color: #EA2678;
+
+}
+
+.team-member span {
+  display: block;
+
+}
+.team-photo {
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+  transition: 0.1s transform ease-in-out;
+}
+
+
+.team-photo:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+/* code for phone layout */
+@media (max-width:850px){
+  .team-member {
+    width:25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+
+  }
+
+}
+
+
+
+@media (max-width:650px){
+  .team-member {
+    float: none;
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .team-member h3,
+  .team-member span {
+    margin: 15px auto;
+  }
+}
+
+
+/* ENDS Team Member CSS
+===========================*/
+
+
+
+
+    </style>
+
+
+
   </head>
   <body>
 
   	<!-- Start Header -->
-	<header id="mu-hero" class="" role="banner" style="background-image: url(http://i68.tinypic.com/418q8.jpg)">
+	<header id="mu-hero" class="content-desktop" role="banner" style="background-image: url(http://i68.tinypic.com/418q8.jpg)">
 		<!-- Start menu  -->
 		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
 		  	<div class="container">
@@ -68,7 +232,7 @@
 			      </button>
 
 			      <!-- Logo -->
-			      <a class="navbar-brand" href="https://webinar.expertreachout.com">Reachout</a>
+			      <a class="navbar-brand" href="https://webinar.expertreachout.com"><img src="./Eventoz _ Home_files/reachoutlogonew.png" style="max-width:60%;"></a>
 
 			    </div>
 
@@ -80,14 +244,14 @@
 				        <li class=""><a href="#mu-schedule">Schedule</a></li>
 			            <li class=""><a href="#mu-speakers">Speakers</a></li>
 			            <li><a href="#mu-faq">faq</a></li>
-			           
+
 			      	</ul>
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container-fluid -->
 		</nav>
 		<!-- End menu -->
 
-		<div class="mu-hero-overlay">
+		<div class="mu-hero-overlay content-desktop">
 			<div class="container">
 				<div class="mu-hero-area">
 
@@ -119,8 +283,55 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
+		<div class="mu-hero-overlay content-mobile" style="height:100vh;">
+			<div class="container">
+				<div class="mu-hero-area">
+
+					<!-- Start hero featured area -->
+					<div class="mu-hero-featured-area">
+						<!-- Start center Logo -->
+						<div class="mu-logo-area">
+							<!-- text based logo -->
+							<a class="mu-logo" href="http://expertreachout-cervicalcancer.eventbrite.com" target="_blank"><i class="fa fa-hand-o-right" ></i> Save your Spot</a>
+							<!-- image based logo -->
+							<!-- <a class="mu-logo" href="#"><img src="assets/images/logo.jpg" alt="logo img"></a> -->
+						</div>
+						<!-- End center Logo -->
+
+						<div class="mu-hero-featured-content" style="padding:10px;">
+
+							<h1 style="padding:10px;">WELCOME TO OUR WEBINARS</h1> <br/>
+							<h2><strong>Understanding Cervical Cancer</strong></h2>
+							<p class="mu-event-date-line">19 June,  2019. @17:30 GMT. <br/> Join on Facebook, Zoom and more </p> <br/>
+
+							<div class="mu-event-counter-area">
+								<div id="mu-event-counter"><span class="mu-event-counter-block"><span>22</span> Days</span> <span class="mu-event-counter-block"><span>02</span> Hours</span> <span class="mu-event-counter-block"><span>11</span> Mins</span> <span class="mu-event-counter-block"><span>35</span> Secs</span></div>
+							</div>
+
+						</div>
+					</div>
+					<!-- End hero featured area -->
+
+				</div>
+			</div>
+		</div>
+
+
+
 	</header>
 	<!-- End Header -->
+
+
+
+
+
+
+
+
 
 	<!-- Start main content -->
 	<main role="main">
@@ -351,7 +562,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 							</div>
 
 							<!-- Start Speakers Content -->
-							<div class="mu-speakers-content">
+							<div class="mu-speakers-content" id="content-desktop">
 
 								<div class="mu-speakers-slider slick-initialized slick-slider">
 
@@ -423,7 +634,9 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 												<li><a href="#" tabindex="-1"><i class="fa fa-linkedin"></i></a></li>
 											</ul>
 										</div>
-									</div><div class="mu-single-speakers slick-slide slick-current slick-active" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 285px;">
+									</div>
+
+									<div class="mu-single-speakers slick-slide slick-current slick-active" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 285px;">
 										<img src="./Eventoz _ Home_files/ogori_kalu.png" alt="speaker img" style="width:180px; height:180px; border-radius: 50%;">
 										<div class="mu-single-speakers-info">
 											<h3>Dr. Ogori. N. Kalu </h3>
@@ -453,7 +666,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 											<h3>William Nmaju </h3>
 											<p>CEO / Founder</p>
 
-											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p> 
+											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
@@ -461,9 +674,6 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 											</ul>
 										</div>
 									</div>
-
-
-
 
 								<div class="mu-single-speakers slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 285px;">
 										<img src="./Eventoz _ Home_files/ruchi_garg.png" alt="speaker img">
@@ -507,7 +717,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 											<h3>William Nmaju </h3>
 											<p>CEO / Founder</p>
 
-											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p> 
+											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
@@ -558,7 +768,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 											<h3>William Nmaju </h3>
 											<p>CEO / Founder</p>
 
-											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p> 
+											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
@@ -607,6 +817,118 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 
 						</div>
 					</div>
+
+
+
+
+
+
+
+					<!-- sepakers content for mobile -->
+
+
+
+
+
+
+					<section class="cf team-container" id="content-mobile">
+
+    <!-- member-->
+    <div class="team-member">
+      <img class="team-photo" src="./Eventoz _ Home_files/ruchi_garg.png">
+    <h3>Dr. Ruchi Garg</h3>
+													<p><strong>Gynaecological Oncologist</strong></p> <br/>
+													<p style="color: #1c1b1b;">Experienced and skilled in Robotic Surgery, Clinical Research, Medical Education, Medicine and Patient Safety </p>
+													<ul class="mu-single-speakers-social">
+														<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+														<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="#" tabindex="-1"><i class="fa fa-linkedin"></i></a></li>
+													</ul>
+      <!-- <a class="email" href="mailto:email@something.com"><span >email</span></a> -->
+    </div>
+
+
+    <!-- member-->
+    <div class="team-member">
+    <img class="team-photo" src="./Eventoz _ Home_files/ogori_kalu.png">
+     <h3>Dr. Ogori. N. Kalu </h3>
+											<p><strong>Surgical Oncology Specialist</strong></p>
+											<p style="color: #1c1b1b;"> Over 15 years of experience and her surgical fellowship from Stanford University. </p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+    </div>
+
+
+    <!-- member-->
+    <div class="team-member">
+    <img class="team-photo" src="./Eventoz _ Home_files/dr_reddy.png">
+      <h3>Dr. Reddy</h3>
+											<p><strong>Renowned Oncologist</strong></p>
+											<p style="color: #1c1b1b;"> Dr Reddy is a renowned oncologist with several years of experience. </p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+    </div>
+
+
+
+    <!-- member-->
+    <div class="team-member">
+    <img class="team-photo" src="./Eventoz _ Home_files/william_image.jpg" >
+      <h3>William Nmaju </h3>
+											<p><strong>CEO / Founder</strong></p>
+
+											<p style="color: #1c1b1b;"> Founder of ReachOut with several years of experience in diverse sectors spanning business, healthcare and technology.</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" tabindex="-1"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+    </div>
+
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+
+
+
+
+
+					<!-- end mobile speakers content -->
+
+
+
+
+
+
+
 				</div>
 			</div>
 		</section>
@@ -753,7 +1075,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 							          </div>
 							          <div id="collapseThree" class="panel-collapse collapse">
 							            <div class="panel-body">
-							            This line of webinars will educate you about cervical, breast and prostrate cancer. learn about causes, symptoms, and preventions. 
+							            This line of webinars will educate you about cervical, breast and prostrate cancer. learn about causes, symptoms, and preventions.
 							            </div>
 							          </div>
 							        </div>
@@ -762,13 +1084,13 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 							          <div class="panel-heading">
 							            <h4 class="panel-title">
 							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-							                <span class="fa fa-angle-up"></span> How much does it cost? 
+							                <span class="fa fa-angle-up"></span> How much does it cost?
 							              </a>
 							            </h4>
 							          </div>
 							          <div id="collapseFour" class="panel-collapse collapse">
 							            <div class="panel-body">
-							             The webinar is 100% free to attend by anyone. 
+							             The webinar is 100% free to attend by anyone.
 							            </div>
 							          </div>
 							        </div>
@@ -777,7 +1099,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 							          <div class="panel-heading">
 							            <h4 class="panel-title">
 							              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-							                <span class="fa fa-angle-up"></span> How do i request a second opinion? 
+							                <span class="fa fa-angle-up"></span> How do i request a second opinion?
 							              </a>
 							            </h4>
 							          </div>
@@ -812,7 +1134,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 							</div>
 
-							
+
 							<div class="mu-contact-content">
 								<div class="row">
 
@@ -835,7 +1157,7 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
@@ -856,9 +1178,9 @@ prevent cancer, best treatment procedures and much more</p> <br/>
 						<div class="mu-social-media">
 							<a href="https://facebook.com/expertreachout"><i class="fa fa-facebook"></i></a>
 							<a href="https://twitter.com/EReachout"><i class="fa fa-twitter"></i></a>
-							
+
 							<a href="https://www.linkedin.com/company/africa-health-initiative/"><i class="fa fa-linkedin"></i></a>
-							
+
 						</div>
 					</div>
 					<div class="mu-footer-bottom">
